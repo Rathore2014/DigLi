@@ -1,0 +1,24 @@
+SDLC		Class(Ankita)	Relation	Input(Alka)	Output(Shalini)	operation	data storage
+Information gathering	"1.Digital Library
+books name
+writer name
+publication name
+release
+publication year
+Pages
+Price
+Bought from, location"	"Books{name, writer name, publication name, pages, price, weight, height, width, length}
+{search}"	"1-1
+1-M
+M-M"		"Search query 1. search for python books
+only one book name?
+should we list all python related books
+sorting(popularity, price,…)"	CRUD Create, read, update, delete, Search, Sorting, update, Authorization, registration, Login	Database, files
+		Writer{name, contacts}					
+		Publication{name, location}					
+		Seller{name, location}					
+Desgin, planning							
+Development							
+Testing							
+Release							
+Support							
