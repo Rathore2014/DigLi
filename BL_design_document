@@ -1,4 +1,4 @@
-SDLC		Class(Ankita)	Relation	Input(Alka)	Output(Shalini)	operation	data storage
+SDLC		
 Information gathering	"1.Digital Library
 books name
 writer name
@@ -21,4 +21,11 @@ Desgin, planning
 Development							
 Testing							
 Release							
-Support							
+Support	
+Relation
+operation
+data storage
+
+Class   (Ankita)
+Input   (Alka)
+Output  (Shalini)
