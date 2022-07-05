@@ -1,13 +1,29 @@
-SDLC		
-Information gathering	"1.Digital Library
-books name
-writer name
-publication name
-release
-publication year
-Pages
-Price
-Bought from, location"	"Books{name, writer name, publication name, pages, price, weight, height, width, length}
+SDLC(Information gathering, planning, development, testing, delivery, support)
+
+Information gathering
+  Digital Library
+  Data
+    books name
+    writer name
+    publication name
+    release
+    publication year
+    Pages
+    Price
+    Bought from, location
+    
+  Method(CRUD)
+  Books{name, writer name, publication name, pages, price, weight, height, width, length}
+  
+  add new book(C-create)
+  read(R- read) - output
+  search -> True False
+  update book record(U-update)
+  remove book record(D-delete)
+  
+  
+  
+
 {search}"	"1-1
 1-M
 M-M"		"Search query 1. search for python books
