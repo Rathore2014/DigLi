@@ -41,6 +41,19 @@ Support
 Relation
 operation
 data storage
+*******************************************************************************************************************************************************************
+Output
+1.Search on book name
+	List of books
+2.Search on Author name
+        List of books
+3.Search with book and Author.
+	List of books
+4.Sorting
+	
+5. Search result
+	Book_name, Author_name....
+*******************************************************************************************************************************************************************
 
 Class   (Ankita)
 Input   (Alka)
