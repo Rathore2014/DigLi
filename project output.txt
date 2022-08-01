@@ -1,5 +1,0 @@
-'''output'''
-search quary,
-only one book name sorting {popularity price}
-book info{writer name,book purchage location,realease date}
-book layout{size,page]
