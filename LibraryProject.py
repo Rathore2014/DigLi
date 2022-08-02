@@ -17,6 +17,30 @@ class Library():
         }
         
     Book()
+    def searchbook():
+        python = {
+            "Python Programming" : "John M Zelle",
+            "Python Pocket Reference" :"Mark Lutz",
+            "Python Cookbook" : "David Beazley"
+        }
+        c_book = {
+            "C Programming Absolute Beginner's" : "Greg Perry and Dean Miller",
+            "C Programming Language" : " Brain W. Kernighan ",
+            "Head First C " : "Griffiths David"
+        }
+        java = {
+            "Effective Java" : "Joshua Bloch",
+            "Spring in Action" : "Craig Walls and Ryan Breidenbach",
+            "Thinking in Java " : " Bruce Eckel"
+        sbook  = Input("Enter book name") 
+        if book in python:
+            print("book is available")
+        elif book in java:
+            print("book is available")
+         elif book in c_book:
+            print("book is available")
+        else:
+            print("book not availble") 
     def Addbook():
         flag = input('Do you want to add library data : ')
         if flag.lower() == 'yes':
