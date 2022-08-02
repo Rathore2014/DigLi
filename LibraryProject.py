@@ -15,45 +15,8 @@ class Library():
             "Spring in Action" : "Craig Walls and Ryan Breidenbach",
             "Thinking in Java " : " Bruce Eckel"
         }
+        
     Book()
-    def Users():
-        name = input("Enter the name:  ")
-        id = input("Enter the id:  ")
-        address = input("Enter the address of Student:  ")
-        mobile = int(input("Enter the mobile number of user: "))
-        email = input("Enter the email id of user: ")
-    Users()
-
-    def Search():
-        take = input("If you want to take book in the library: ")
-        if take.lower() == 'yes':
-            print("Three types of book available in the library:")
-            blist = ["Python","C_book","Java"]
-            print(blist)
-            # print(random.choice(blist))
-            # choice = 1
-            # while choice != 0:
-            #     print("1.")
-            #     print("2.")
-            #     print("3.")
-            #     choice = int(input("Enter your choice:  "))
-            #     if choice == 1:
-            #         print("Python")
-            #         for book,author in python.items():
-            #             print(book,author)
-            #     elif choice == 2:
-            #         print("C_book")
-            #         for cbook,cauthor in c_book.items():
-            #             print(cbook,cauthor)
-            #     elif choice == 3:
-            #         print("Java")
-            #         for jbook,jauthor in java.items():
-            #             print(jbook,jauthor)
-            #     else:
-            #         print("Invalid choice")   
-            print("Enter the book name you want: ")
-            print("Thank you!" "\n" "Study well")     
-    Search()
     def Addbook():
         flag = input('Do you want to add library data : ')
         if flag.lower() == 'yes':
@@ -66,10 +29,12 @@ class Library():
     Addbook()
 
     def Issuebook():
-        ibook_name = input("Enter the book name:  ")
-        ibook_subject = input("Enter the subject of the book:  ")  
-        ibook_author = input("Enter the book author name: ")
-        ibook_date = input("Enter the date of issue book: ")
+        issue = input("Do you want to take book in the library :")
+        if issue.lower() == 'yes':
+            ibook_name = input("Enter the book name:  ")
+            ibook_subject = input("Enter the subject of the book:  ")  
+            ibook_author = input("Enter the book author name: ")
+            ibook_date = input("Enter the date of issue book: ")
     Issuebook()
     
     def Submitbook():
@@ -91,10 +56,6 @@ while choice != 0:
     choice = int(input("Enter your choice:  "))
     if choice == "Book":
         print(obj.Book())
-    elif choice == "Users":
-        print(obj.Users())
-    elif choice == "Search":
-        print(obj.Search())    
     elif choice == "Addbook":
         print(obj.Addbook())
     elif choice == "Issuebook":
