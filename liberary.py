@@ -1,12 +1,17 @@
 class input():
-   def __init__(self):
+   #Creating init function......    
+   def __init__(self,name,roll,fathername,contact):
+      self.name = name
+      self.roll = roll
+      self.father = fathername
+      self.contact = contact
       
    # Adding student.......
    def addStudent():
       name = input("Enter student name : ")
       rollNo = int(input("Enter the roll of student :"))
       father_name = input("enter father name :")
-      contect_no = int(input("Enter contect number :"))
+      contact_no = int(input("Enter contect number :"))
 
    # To issue a book from liberary.....
    def issue_book():
@@ -25,11 +30,13 @@ class input():
 
       # to add the books in liberary......
    def addBook():
+      adbk = ["Hindi","English","Math","Sanskrit"]
       bookName = input(" Enter Book name : ")
       bookPub = input("Enetr name of publication :")
       book_id = int(input("Enter Book_id :"))
       book_status =int(input("Enter Book_status :")) 
-
+      print("Book detail is enter in library")
+      
 
    def callFunction():
       functionname = input("Enter Operation name : ")
