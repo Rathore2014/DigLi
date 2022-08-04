@@ -1,4 +1,11 @@
 class Library():
+    def __init__(self,name,id,address,email,phone):
+        self.name = name
+        self.id = id
+        self.add = address
+        self.email = email
+        self.phone = phone
+        
     def Book():
         python = {
             "Python Programming" : "John M Zelle",
@@ -72,7 +79,6 @@ obj = Library()
 choice = 1
 while choice != 0:
     print("1. Book ")
-    print("2. Users ")
     print("3. Search")
     print("4. Addbook")
     print("5. Issuebook")
