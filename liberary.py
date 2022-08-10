@@ -37,7 +37,7 @@ class input():
       book_status =int(input("Enter Book_status :")) 
       print("Book detail is enter in library")
       
-
+obj = Input()
    def callFunction():
       functionname = input("Enter Operation name : ")
       if functionname == "addStudent":
