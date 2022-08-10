@@ -1,4 +1,4 @@
-class input():
+class Input():
    #Creating init function......    
    def __init__(self,name,roll,fathername,contact):
       self.name = name
