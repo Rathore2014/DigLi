@@ -48,7 +48,7 @@ class Library():
         else:
             print("book not availble") 
             
-    Searchbook()        
+          
     def Addbook(self):
         flag = input('Do you want to add library data : ')
         if flag.lower() == 'yes':
@@ -58,7 +58,7 @@ class Library():
             book_publ = input("Enter the Publisher name: ")
             book_subject = input("Enter the subject of the book:  ")   
             book_edit = input("Enter the edition of the book: ") 
-    Addbook()
+   
 
     def Issuebook(self):
         issue = input("Do you want to take book in the library :")
@@ -78,14 +78,14 @@ class Library():
             self.books_dict[book_Id]["Issue_date"] =ibook_date
             self.books_dict[book_Id]["Status"] ="Already Issued"
             print("---Book Issued Successfull:---")
-    Issuebook()
+    
     
     def Submitbook(self):
         sbook_name = input("Enter the book name:  ")
         sbook_subject = input("Enter the subject of the book:  ")  
         sbook_author = input("Enter the book author name: ")
         sbook_date = input("Enter the date of submmit book: ")
-    Submitbook()    
+      
 
 obj = Library("List_of_books.txt", "Python's Library")
 choice = 1
@@ -94,9 +94,12 @@ while choice != 0:
     print("2. Addbook")
     print("3. Issuebook")
     print("4. Submitbook")
+    print("5.  DisplayBook")        
     choice = int(input("Enter your choice:  "))
-    if choice == "Book":
-        print(obj.Book())
+    if choice == "DisplayBook":
+        print(obj.DisplayBook())
+    elif choice == "SearchBook":
+        print(obj.SearchBook())
     elif choice == "Addbook":
         print(obj.Addbook())
     elif choice == "Issuebook":
