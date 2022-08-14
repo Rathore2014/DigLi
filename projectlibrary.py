@@ -51,7 +51,8 @@ class digitallibrary():
             print("the list of book :"+str(list))
             res= [index for index in self.book_name if index[0].lower() == check.lower()]  
 obj =digitallibrary('book_name','authorname','publication_name','pages','price','weight','height','length')
-obj.mylist[]             
+obj.mylist[]
+obj.library()
 obj.displaybook()
 obj.searchbook()
 obj.submit_book()
