@@ -26,23 +26,16 @@ class Library():
         for key, value in self.books_dict.items():
             print(key, "/t""/t", value.get("books_title"), value.get("Status"))
     
-    print(projectlibrary.searchbook(name,))
     
-    print(liberary.addBook(name,author,publisher))
     
+#              """ IMPORT projectlibrary AND liberary MODULE IN MY PROJECT"""
+
+    print(projectlibrary.searchbook(book))
+    print(liberary.addBook(adbk))
+    print(liberary.addStudent(name,roll))
     
     
           
-    def Addbook(self):
-        flag = input('Do you want to add library data : ')
-        if flag.lower() == 'yes':
-            book_name = input("Enter the book name:  ")
-            book_code = input("Enter the book code:  ")
-            book_author = input("Enter the book author name: ")
-            book_publ = input("Enter the Publisher name: ")
-            book_subject = input("Enter the subject of the book:  ")   
-            book_edit = input("Enter the edition of the book: ") 
-   
 
     def Issuebook(self):
         issue = input("Do you want to take book in the library :")
@@ -92,3 +85,9 @@ while choice != 0:
         print(obj.Submitbook())    
     else:
         print("Invalid choice")    
+
+        
+        
+        
+        
+        
