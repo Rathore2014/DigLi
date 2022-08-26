@@ -1,4 +1,5 @@
-import book
+import projectlibrary
+import liberary
 class Library():
 #     This class is used to keep record of books library.
 
@@ -24,31 +25,13 @@ class Library():
         print("Book Id", "/t", "Title")
         for key, value in self.books_dict.items():
             print(key, "/t""/t", value.get("books_title"), value.get("Status"))
-    def Searchbook(self):
-        python = {
-            "Python Programming" : "John M Zelle",
-            "Python Pocket Reference" :"Mark Lutz",
-            "Python Cookbook" : "David Beazley"
-        }
-        c_book = {
-            "C Programming Absolute Beginner's" : "Greg Perry and Dean Miller",
-            "C Programming Language" : " Brain W. Kernighan ",
-            "Head First C " : "Griffiths David"
-        }
-        java = {
-            "Effective Java" : "Joshua Bloch",
-            "Spring in Action" : "Craig Walls and Ryan Breidenbach",
-            "Thinking in Java " : " Bruce Eckel"
-        sbook  = Input("Enter book name") 
-        if book in python:
-            print("book is available")
-        elif book in java:
-            print("book is available")
-         elif book in c_book:
-            print("book is available")
-        else:
-            print("book not availble") 
-            
+    
+    print(projectlibrary.searchbook(name,))
+    
+    print(liberary.addBook(name,author,publisher))
+    
+    
+    
           
     def Addbook(self):
         flag = input('Do you want to add library data : ')
