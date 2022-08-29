@@ -1,6 +1,6 @@
-import sqlite3 
- 
-
+import sqlite3
+import library
+print(library.Addbook) 
 class digitallibrary():
     def __init__(self,book_name,authorname,publication_name,pages,price,weight,height,length):
         self.con = sqlite3.connect('digitallibrary.db')
