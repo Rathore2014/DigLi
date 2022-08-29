@@ -59,3 +59,12 @@ Class   (Ankita)
 Input   (Alka)
 Output  (Shalini)
 Database table and relation (Anjali)
+*******************************************************************************************************************************************************
+diglib(base class)
+	book definition
+input
+	import diglib
+output
+	import diglib
+	
+
