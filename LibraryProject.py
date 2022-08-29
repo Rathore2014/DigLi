@@ -29,10 +29,13 @@ class Library():
     
     
 #              """ IMPORT projectlibrary AND liberary MODULE IN MY PROJECT"""
-
-    print(projectlibrary.searchbook(book))
-    print(liberary.addBook(adbk))
-    print(liberary.addStudent(name,roll))
+    def Importing(self):
+        projectlibrary.searchbook(searchbook.book)
+        print("Well Come to SearchBook Function:")
+        liberary.addBook(addBook.adbk)
+         print("Well Come to AddBook Function:")
+        liberary.addStudent(addStudent.name,addStudent.roll)
+         print("Well Come to AddStudent Function:")
     
     
           
