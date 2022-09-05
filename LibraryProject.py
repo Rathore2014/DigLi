@@ -3,20 +3,7 @@ import liberary
 class Library():
 #     This class is used to keep record of books library.
 
-    def __init__(self,list_of_book,library_name):
-        self.list_of_book = "List_of_book.txt"
-        self.library_name = library_name
-        self.books_dict = {}
-        Id = 101
-        with open(self.list_of_books) as book:
-            content = book.readlines()
-        for line in content:
-            self.books_dict.update({str(ID):{"books_title  : line replace"("\n", ""),
-                                             "lender_name" : "",
-                                             "Issue_date" :  "",
-                                             "Status" : ""}})
-        Id = Id + 1
-        
+    
         
 #         """   It has total five module: "Display Book", "Search Book", "Add Book ", "Issue Book", "Submmit Book "   """
 
@@ -36,7 +23,8 @@ class Library():
          print("Well Come to AddBook Function:")
         liberary.addStudent(addStudent.name,addStudent.roll)
          print("Well Come to AddStudent Function:")
-    
+        projectlibrary.showbook(showbook.list,showbook.res)
+        print("Well Come to SearchBook Function:")
     
           
 
@@ -66,7 +54,7 @@ class Library():
         sbook_author = input("Enter the book author name: ")
         sbook_date = input("Enter the date of submmit book: ")
       
-
+obj =digitallibrary()
 obj = Library("List_of_books.txt", "Python's Library")
 choice = 1
 while choice != 0:
