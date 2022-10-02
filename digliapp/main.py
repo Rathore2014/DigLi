@@ -15,7 +15,18 @@ def menu():
 
   if choice == 1:
     inpobj = input_book()
-    inpobj.inputcli()
+    input_type = input("1: Enter  from CLI Input \n2: Enter  from Json Input : ")
+    if input_type == "1":
+      inpobj.inputcli()
+    elif input_type == "2":
+      inpobj.inputfromjson()
+    else:
+      print("Wrong value entered. Please Try again...")
+      retry = input("1: Retry \n2: Exit....")
+      if retry == "1":
+        menu()
+      else:
+        ("thanks We are terminating process ... ")
   elif choice == 2:
     s_obj = search()
     print(s_obj.name())
