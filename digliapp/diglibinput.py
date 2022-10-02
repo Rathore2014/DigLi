@@ -6,7 +6,7 @@ class input_book:
   def __init__(self):
     self.db_con = sqlite3.connect('digli.db')
     self.cur_obj = self.db_con.cursor()
-    self.cur_obj.execute("CREATE TABLE IF NOT EXISTS books (book_name text)");
+    self.cur_obj.execute("CREATE TABLE IF NOT EXISTS books (book_name text, isbn INT ,author VARCHAR(100));")
     # self.query = 'ALTER TABLE books ADD isbn ,author VARCHAR(100);'
     # self.cur_obj.execute(self.query)
     # self.db_con.commit()
