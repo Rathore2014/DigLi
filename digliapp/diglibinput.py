@@ -2,6 +2,19 @@ import sqlite3
 from diglib import book
 import json
 
+def checkavailbility(isbn, name):
+  db_con = sqlite3.connect('digli.db')
+  cur_obj = db_con.cursor()
+  j = f'SELECT * FROM books WHERE isbn ={isbn} '
+  cur_obj.execute(j)
+  check =cur_obj.fetchall()
+  length = len(check)
+  if length > 0 :
+    
+    return True
+  else:
+    return False
+
 class input_book:
   def __init__(self):
     self.db_con = sqlite3.connect('digli.db')
@@ -16,11 +29,8 @@ class input_book:
     isbn = int(input("Enter ISBN number : "))
     author = input("Enter Author Name : ")
  
-    j = f'SELECT * FROM books WHERE isbn ={isbn}'
-    self .cur_obj.execute(j)
-    check =self.cur_obj.fetchall()
-    length = len(check)
-    if length>0:
+    
+    if checkavailbility(isbn = isbn, name = name):
       print("This book is already exist!")
       
     else:
@@ -37,11 +47,8 @@ class input_book:
    
     for i in data["book_info"]:
       print(i["isbn"], {i["book_name"]})
-      w = f'SELECT * FROM books WHERE isbn = {i["isbn"]}'
-      self .cur_obj.execute(w)
-      check =self.cur_obj.fetchall()
-      length = len(check)
-      if length>0:
+      
+      if checkavailbility(isbn = i["isbn"], name = i["book_name"]):
         print("This book is already exist!!!!")
         
       else:
@@ -52,3 +59,6 @@ class input_book:
     self.cur_obj.execute(query)
     res = self.cur_obj.fetchall()
     return res
+ #obj = input_book()
+# obj.inputcli()
+# print(obj.inputfromjson())
