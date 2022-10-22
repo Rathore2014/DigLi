@@ -1,6 +1,7 @@
 from diglibinput import input_book
 from diglibsearch import search
 from digliboutput import output_book
+from datalib import sqdata 
 import sys
 
 def menu():
@@ -34,7 +35,8 @@ def menu():
     o_obj = output_book()
     print(o_obj.getdata())
   elif choice == 4:
-    delete()
+    obj1=sqdata()
+    obj1.sqdata()
   elif choice == 5:
     sys.exit()
   else:
